@@ -24,6 +24,9 @@ body {
 
 .apresentacao-conteudo {
         width: 615px;
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
 
 }
 
@@ -49,7 +52,7 @@ body {
         width: 280px;
         text-align: center;
         border-radius: 16px;
-        font-size: 24px;
+        font-size: 30px;
         padding: 21.5px 0;
         text-decoration: none;
         font-family:'Montserrat', sans-serif ;
@@ -58,4 +61,9 @@ body {
 .imagem{
         max-width: 43%;
         width: auto;
+        overflow: hidden;
+        border-radius: 10%;
+        border: 10px solid #07d9f5fb;
+        padding: 12px;
+        display: inline-block;
 }

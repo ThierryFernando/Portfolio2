@@ -8,18 +8,28 @@
 body {
         height: 100vh;
         box-sizing: border-box;
-        background-color:rgb(6, 81, 116) ;
         color: antiquewhite;
+        background: linear-gradient(to bottom, #0a4850, #066f8f, #068a94);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        margin: 0;
+        order:2;
+
 }
 
 .titulo-destaque {
         color: #000000;}
+        o
 
 .conteudo {
     margin: 10%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: column;
+    order:3;
+
 }
 
 .apresentacao-conteudo {
@@ -27,17 +37,20 @@ body {
         display: flex;
         flex-direction: column;
         gap: 45px;
+        order:4;
 
 }
 
 .apresentacao-conteudo-titulo {
         font-size: 38px;
         font-family: 'Krona One', 'sans-serif';
+        order:5;
 }
 
 .apresentacao-conteudo-paragrafo {
         font-size: 20px;
         font-family: 'Montserrat', sans-serif;
+        order:6;
 }
 
 .apresentacao-links {
@@ -46,30 +59,56 @@ body {
         align-items: center;
         width: 1000px
         
+        
 }
 
 .botao {
-        background-color: aquamarine;
+        background-color: rgb(1, 181, 252);
         color: rgb(255, 255, 255);
-        width: 280px;
+        width: 200px;
         text-align: center;
-        border-radius: 16px;
+        border-radius: 50px;
         font-size: 30px;
-        padding: 16px;
+        padding: 15px 0;
         text-decoration: none;
         font-family: 'Montserrat', sans-serif;
-        border: none;
+        border: 3px solid #000000;
         cursor: pointer;
-        flex: 1;
         margin-left: 10px;
         margin-right: 10px;
-        background: linear-gradient(to right, #000000fb, #318f8f);
-        transition: step-start 0.3s ease;
+        position: relative;
+        overflow: hidden;
+        transition: 0.3s ease; 
+        order:7;
     }
-
+    
     .botao:hover {
         transform: scale(1.1); 
     }
+    
+    .botao::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0; 
+        width: 0;
+        height: 100%;
+        background: linear-gradient(45deg, transparent, #15415a);
+        transition: 0.2s;
+    }
+    
+    .botao:hover::before {
+        width: 100%; 
+    }
+    
+    .botao i {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 60px; 
+    }
+
     
 .imagem{
         max-width: 100%;
@@ -82,5 +121,6 @@ body {
         display: inline-block;
         box-shadow: 15px 10px 15px 15px rgba(52, 208, 247, 0.5);
         filter: brightness(0.8);
+        order:1;
         
 }

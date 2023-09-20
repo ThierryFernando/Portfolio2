@@ -109,7 +109,7 @@ body {
 }
 
 .imagemfamiliagoku {
-    max-width: 100%; /* A imagem se ajustará ao tamanho do contêiner pai */
+    max-width: 80%; /* A imagem se ajustará ao tamanho do contêiner pai */
     height: auto;
     border-radius: 10px; /* Adiciona curvatura nos cantos do elemento */
     transition: transform 0.3s ease-in-out; /* Efeito de transição suave ao passar o mouse sobre a imagem */
@@ -141,6 +141,6 @@ body {
 
 /* Estilo de link no rodapé */
 .rodape a:hover {
-    color: #FFA500;
+    color: #148df0;
 }
 

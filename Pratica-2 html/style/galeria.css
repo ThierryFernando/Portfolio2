@@ -72,6 +72,21 @@ body {
 
     /* Adicione uma margem inferior para separar dos itens */
     margin-bottom: 20px; /* Você pode ajustar esse valor conforme necessário */
+
+}
+
+.subtitulogaleria {
+    /* Define o tamanho da fonte como 36px */
+    font-size: 16px;
+
+    /* Define a família de fontes como 'Krona One' com fallback para sans-serif */
+    font-family: 'Krona One', sans-serif;
+
+    /* Alinha o texto justificado */
+    text-align: center;
+
+    /* Adicione uma margem inferior para separar dos itens */
+    margin-bottom: 20px; /* Você pode ajustar esse valor conforme necessário */
 }
 
 /* Estilização da seção da galeria */
@@ -184,6 +199,6 @@ body {
 
 /* Estilo de link no rodapé */
 .rodape a:hover {
-    color: #FFA500;
+    color: #148df0;
 }
 
